@@ -1,0 +1,51 @@
+<div class="header-bar">
+  <img src="../assets/logo (1).png" alt="">
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Campos à esquerda -->
+    <div class="col-md-6">
+      <form #f="ngForm">
+        <div class="d-flex gap-2">
+          <div class="mb-3">
+            <app-input name="CEP" placeholder="Digite seu CEP..."></app-input>
+          </div>
+          <div class="mb-3">
+            <app-button name="Consultar" [onClick]="consultarCep"></app-button>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <app-input name="Logradouro" [name]="'Logradouro'"></app-input>
+        </div>
+        <div class="mb-3">
+          <app-input name="Complemento"></app-input>
+        </div>
+        <div class="mb-3">
+          <app-input name="Bairro"></app-input>
+        </div>
+        <div class="mb-3">
+          <app-input name="Localidade"></app-input>
+        </div>
+        <div class="mb-3">
+          <app-input name="UF"></app-input>
+        </div>
+
+        <div class="mb-3">
+          <app-button name="Salvar"></app-button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Lista à direita -->
+    <div class="col-md-6">
+      <ul class="list-group">
+        <!-- Lista de itens aqui -->
+        <li class="list-group-item">Item 1</li>
+        <li class="list-group-item">Item 2</li>
+        <li class="list-group-item">Item 3</li>
+      </ul>
+    </div>
+  </div>
+</div>
